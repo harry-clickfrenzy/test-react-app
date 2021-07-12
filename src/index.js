@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RoktContextProvider } from './rokt-context';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <RoktContextProvider
+    tagId="2604482157155241279_df7a96fd3e6c4ab5b29014cef91a7849"
+    sandbox={true}
+  >
     <App />
-  </React.StrictMode>,
+  </RoktContextProvider>,
   document.getElementById('root')
 );
 
